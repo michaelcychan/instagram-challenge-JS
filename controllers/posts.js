@@ -7,6 +7,7 @@ const PostsController = {
         throw err;
       }
       posts.reverse();
+      console.log(posts[0]); //visualisation only
       res.render("posts/index", { posts: posts, session: req.session });
     });
   },

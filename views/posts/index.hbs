@@ -1,8 +1,15 @@
 <h1>Timeline</h1>
+
 <ul class="posts">
   {{#each posts}}
   <li class="each-post">
-    <div class="image"><img src="{{this.imageUrl}}"></div>
+    <div class="image"><img class="post-img" src="{{this.imageUrl}}"></div>
+    <div class="like">
+      <form id="{{this._id}}" method="post" action="/likes/">
+        <input name="post_id" type="hidden" value="{{this._id}}">
+        <input type="submit" value="👍" >
+      </form>
+    </div>
     <div class="message">{{this.message}}</div>
     <div class="poster">Posted by {{this.poster}}</div>
     <div class="created-at">at {{this.createdAt}}</div>
