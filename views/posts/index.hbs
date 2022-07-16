@@ -1,7 +1,12 @@
 <h1>Timeline</h1>
 <ul class="posts">
   {{#each posts}}
-  <li>{{this.message}}</li>
+  <li>
+    <div class="image"><img src="{{this.imageUrl}}"></div>
+    <div class="message">{{this.message}}</div>
+    <div class="poster">Posted by {{this.poster}}</div>
+    <div class="created-at">at {{this.createdAt}}</div>
+  </li>
   {{/each}}
 </ul>
 
