@@ -7,11 +7,11 @@ const PostsController = {
         throw err;
       }
       posts.reverse();
-      res.render("posts/index", { posts: posts });
+      res.render("posts/index", { posts: posts, session: req.session });
     });
   },
   New: (req, res) => {
-    res.render("posts/new", {});
+    res.render("posts/new", {session: req.session});
   },
   Create: (req, res) => {
     console.log(req.session) // for visualisation only
