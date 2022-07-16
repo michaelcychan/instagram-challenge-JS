@@ -1,14 +1,29 @@
 Instagram Challenge
 ===================
 
-## Instructions
-
-* Feel free to use Google, your notes, books, etc., but work on your own
-* If you refer to the solution of another coach or student, please put a link to that in your README
-* If you have a partial solution, **still check in a partial solution**
-* You must submit a pull request to this repo with your code by 9am Monday morning
-
 ## Task
+
+Due to time limitation, the targets of this project are as follows:
+
+### User Features
+1. Users are able to sign up
+2. Users are able to log in
+3. Users are able to log out
+4. Users are able to post texts
+5. Users are able to post image url
+6. Users are able to view the images and texts
+7. Users are shown the most recent posts on top
+8. Users can upload photos
+9. Users can like posts
+10. Users can comment
+
+### Backend features
+
+1. Testing database is clear every time tests are run
+2. Blank passwords are not allowed
+3. Users cannot register twice with the same email
+
+### Origiinal task
 
 Build Instagram: Simple huh!
 
@@ -26,15 +41,7 @@ Remember to proceed in small steps! Getting confused? Make the steps even smalle
 
 ## Code Quality
 
-For linting, you can use the `.rubocop.yml` in this repository (or your own!).
-You'll need these gems:
-
-```ruby
-group :development, :test do
-  gem 'rubocop', '1.20', require: false
-  gem 'rubocop-rails'
-end
-```
+This project is written in javascript, both backend and front end.
 
 You can also lint Javascript, CSS, and ERB — feel free to research this. These
 will help you to train yourself to produce cleaner code — and will often alert
