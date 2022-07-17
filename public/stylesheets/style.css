@@ -67,6 +67,6 @@ div.content {
 }
 
 img.post-img {
-  heigth: 300px;
+  max-height: 200px;
   width: auto;
 }
